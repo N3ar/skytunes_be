@@ -3,6 +3,7 @@ Scripts and instructions associated with setting up/ supporting skytunes server 
 
 ## Installation Scripts
 FFmpeg installation script: run with sudo to install ffmpeg and dependencies on ubuntu 14.04 Trusty
+getID3 installation script: run with sudo to install getID3 to /opt
 
 ## Script to downsample file
 *In progress*
