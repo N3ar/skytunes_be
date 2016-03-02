@@ -19,7 +19,7 @@ define("LOW_QUALITY", 2);
 define("ABYSMAL", 1);
 
 // Check file bitrate to confirm file validity
-// TODO: Integrate into proper error checking
+// TODO: Integrate into proper error checking in upload_music.php
 function check_file_bitrate($bitrate) {
     return (bool) ($bitrate > MAX_FILE_BITRATE);
 }
@@ -27,7 +27,7 @@ function check_file_bitrate($bitrate) {
 // Assign downsampling index
 // TODO: Test this
 function assign_downsample_index($bitrate, $index) {
-    // Not currently supported bitrates: 9600, 6144, 5644.8, 1411.2
+    // Not currently supported bitrates in Kb/s: 9600, 6144, 5644.8, 1411.2
     if($bitrate >= 1411) {
         echo nl2br("A .wav file.\n");
         $index = 9;
