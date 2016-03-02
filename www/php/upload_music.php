@@ -3,6 +3,7 @@
 // include getID3() library (can be in a different directory if full path is specified)
 // TODO: need to check whether we actually need entire folder= ...
 require_once('getid3/getid3.php');
+require('downsample_music.php');
 
 define("VALID_MUSIC_FORMATS", array(
     'mp3',
@@ -18,10 +19,14 @@ define("MUSIC_PATH_DEPTH", 3); //
 // Initialize getID3 engine
 $getID3 = new getID3;
 
+// TODO: We may want to consider storing as many files as possible in some AAC format (mp4/m4a)
+// Their quality is better than mp3 at equivalent bitrates
+
 // Returns appropriate directory path where the file should be stored.
 function directory_path($file) {
     // TODO: use $fileName or some other paramter (audio fingerprint) to determine where to store files in the system
     // Might use MD5, SHA1, or some other hashing algorithm. To prevent directories from getting too large, can use user directories as well
+    // TODO: I believe that getID3 provides some of that functionality. It is briefly discussed in structure.txt
 
     $sha1 = sha1_file($file); // hashes the actual file
     //$sha1 = sha1(basename( $file )); // 40 character length string is returned
@@ -45,28 +50,28 @@ function error_message($errorCode) {
     $message = "";
     switch($errorCode) {
         case UPLOAD_ERR_INI_SIZE:
-            $message = "The uploaded file exceeds the upload_max_filesize directive in php.ini.\n";
+            $message .= "The uploaded file exceeds the upload_max_filesize directive in php.ini.\n";
             break;
         case UPLOAD_ERR_FORM_SIZE:
-            $message = "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.\n";
+            $message .= "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form.\n";
             break;
         case UPLOAD_ERR_PARTIAL:
-            $message = "The uploaded file was only partially uploaded.\n";
+            $message .= "The uploaded file was only partially uploaded.\n";
             break;
         case UPLOAD_ERR_NO_FILE:
-            $message = "No file was uploaded.\n";
+            $message .= "No file was uploaded.\n";
             break;
         case UPLOAD_ERR_NO_TMP_DIR:
-            $message = "Missing a temporary folder.\n";
+            $message .= "Missing a temporary folder.\n";
             break;
         case UPLOAD_ERR_CANT_WRITE:
-            $message = "Failed to write file to disk.\n";
+            $message .= "Failed to write file to disk.\n";
             break;
         case UPLOAD_ERR_EXTENSION:
-            $message = "File upload stopped by extension.\n";
+            $message .= "File upload stopped by extension.\n";
             break;
         default:
-            $message = "Unknown upload error.\n";
+            $message .= "Unknown upload error.\n";
             break;
     }
 
@@ -134,6 +139,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST["submit"]) and isset($
                     mkdir($target_dir, 0777, true);
                 }
 
+                // Determine details of downsampling
+                echo nl2br("\n" . $fileInfo["bitrate"] . "\n");
+                if (check_file_bitrate(["bitrate"]/1000)) {
+                    echo nl2br("ERROR: too high of bitrate, wrong kind of file recieved.");
+                } else {
+                    $downsample_index = 0;
+                    $downsample_index = assign_downsample_index($fileInfo["bitrate"]/1000, $downsample_index);
+                    echo nl2br("Downsample index returned: " . $downsample_index . ".\n");
+                    // TODO: Check with MARIO about output file pathing
+                    // create_downsamples($downsample_index, /*$dir_path output*/);
+                }
+
+                // TODO: @Mario - we would probably want to remove after we create the various files
                 if (move_uploaded_file($_FILES["musicFilesToUpload"]["tmp_name"][$i], $target_file)) {
                   echo nl2br("The file ". basename( $_FILES["musicFilesToUpload"]["name"][$i]) . ", has been uploaded.\n");
 
