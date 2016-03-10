@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,14 +13,17 @@ namespace CSharpUpload
 	/// </summary>
 	public static class FileSniffer
 	{
-		#region Constants
-
+		// NOTE: Last 8 bites of file are unique among all file sigs to WAV. Skipping the first 8 will suffice to determine file type.
 		public readonly static FileType MP3 = new FileType (new byte?[] { 0x49, 0x44, 0x33 }, 0, "mp3", "audio/"); // 3 bytes
 		public readonly static FileType M4A = new FileType (new byte?[] { 0x00, 0x00, 0x00, 0x20, 0x66, 0x74, 0x79, 0x70, 0x4D, 0x34, 0x41, 0x20 }, 0, "m4a", "audio/"); // 12 bytes
-//		public readonly static FileType WAV = new FileType (new byte?[] { 0x52, 0x49, 0x46, 0x46, xx, xx, xx, xx, 0x57, 0x41, 0x56, 0x45, 0x66, 0x6D, 0x74, 0x20 }, 0, "wav", "audio/"); // xx bytes
+		public readonly static FileType M4A_alt = new FileType (new byte?[]	{ 0x66, 0x74, 0x79, 0x70, 0x33, 0x67, 0x70, 0x35 }, 4, "m4a", "audio/");
+		public readonly static FileType WAV = new FileType (new byte?[] { /*0x52, 0x49, 0x46, 0x46, xx, xx, xx, xx,*/ 0x57, 0x41, 0x56, 0x45, 0x66, 0x6D, 0x74, 0x20 }, 8, "wav", "audio/"); // xx bytes
+		public readonly static FileType MP4 = new FileType (new byte?[]	{ 0x66, 0x74, 0x79, 0x70, 0x69, 0x73, 0x6F, 0x6D}, 4, "mp4", "audio/");
+		public readonly static FileType FLAC = new FileType (new byte?[] { 0x66, 0x4C, 0x61, 0x43, 0x00, 0x00, 0x00, 0x22 }, 0, "flac", "audio/");
+		public readonly static FileType AAC = new FileType (new byte?[]	{ 0xFF, 0xF1 }, 0, "aac", "/audio");
 
 		// all the file types to be put into one list
-		public readonly static List<FileType> FileTypes = new List<FileType> { MP3, M4A };
+		public readonly static List<FileType> FileTypes = new List<FileType> { MP3, M4A, M4A_alt, WAV, MP4, FLAC, AAC };
 
 		// number of bytes to read from a file
 		private const int MaxHeaderSize = 560;
@@ -61,7 +64,7 @@ namespace CSharpUpload
 					}
 				}
 
-				if (matchingBytes == type.Header.Length)
+				if (matchingBytes == type.Header.Length || matchingBytes + 8 == type.Header.Length)
 				{
 					// if all the bytes match, return the type
 					return type;
@@ -104,7 +107,7 @@ namespace CSharpUpload
 					}
 				}
 
-				if (matchingBytes == type.Header.Length)
+				if (matchingBytes == type.Header.Length || matchingBytes + 8 == type.Header.Length)
 				{
 					// if all the bytes match, return the type
 					return type;
