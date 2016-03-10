@@ -1,0 +1,62 @@
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/AwesomeAngularMVCApp.dll.mdb
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/AwesomeAngularMVCApp.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/AwesomeAngularMVCApp.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/AwesomeAngularMVCApp.dll.mdb
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Antlr3.Runtime.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Razor.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Helpers.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.Deployment.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.Razor.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Fix.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Owin.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.Core.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Mvc.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Cookies.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Host.SystemWeb.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Http.Common.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.EntityFramework.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Newtonsoft.Json.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Optimization.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.Owin.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Google.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.OAuth.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Facebook.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/dotless.Core.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/EntityFramework.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/EntityFramework.SqlServer.dll
+/Users/mag94/Downloads/angularmvctutorial-master/Part One/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/WebGrease.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/AwesomeAngularMVCApp.dll.mdb
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/AwesomeAngularMVCApp.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/AwesomeAngularMVCApp.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/obj/Debug/AwesomeAngularMVCApp.dll.mdb
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Antlr3.Runtime.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Razor.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Helpers.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.Deployment.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.WebPages.Razor.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Fix.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Owin.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.Core.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Mvc.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Cookies.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Host.SystemWeb.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Http.Common.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.EntityFramework.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Newtonsoft.Json.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/System.Web.Optimization.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.AspNet.Identity.Owin.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Google.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.OAuth.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/Microsoft.Owin.Security.Facebook.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/dotless.Core.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/EntityFramework.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/EntityFramework.SqlServer.dll
+/home/cryptox/Projects/SkyTunes/MVC C# with Angular/AwesomeAngularMVCApp/AwesomeAngularMVCApp/AwesomeAngularMVCApp/bin/WebGrease.dll
