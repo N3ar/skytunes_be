@@ -1,0 +1,6 @@
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/bin/CSharpUpload.dll.mdb
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/bin/CSharpUpload.dll
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/obj/Debug/CSharpUpload.dll
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/obj/Debug/CSharpUpload.dll.mdb
+/Users/mag94/Projects/CSharpUpload/CSharpUpload/bin/CSharpUpload.dll.config
