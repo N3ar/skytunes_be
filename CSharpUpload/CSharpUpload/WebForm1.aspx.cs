@@ -156,7 +156,7 @@ namespace CSharpUpload
 							Directory.CreateDirectory (Server.MapPath("Data") + subDirs);
 
 							uploadedFile.SaveAs (SaveLocation);
-//							mendUserLibrary("usr", SaveLocation);
+							mendUserLibrary("usr", SaveLocation);
 							Response.Write ("The file " + uploadedFile.FileName + " has been uploaded. <br />");
 						} catch (Exception ex) {
 							Response.Write ("Error: " + ex.Message);
@@ -197,9 +197,10 @@ namespace CSharpUpload
 			if (!Directory.Exists (albumdir)) {
 				Directory.CreateDirectory (albumdir);
 			}
-
+				
+			string newtrackpath = albumdir + "/" + track;
+			File.Move (file, newtrackpath);
 			mp3file.Dispose ();
-			File.Move (file, albumdir);
 		}
 
 		// Assuming the following directory structure: User -> Artists -> Albums -> Tracks
