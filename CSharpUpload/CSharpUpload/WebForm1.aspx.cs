@@ -156,6 +156,7 @@ namespace CSharpUpload
 							Directory.CreateDirectory (Server.MapPath("Data") + subDirs);
 
 							uploadedFile.SaveAs (SaveLocation);
+//							mendUserLibrary("usr", SaveLocation);
 							Response.Write ("The file " + uploadedFile.FileName + " has been uploaded. <br />");
 						} catch (Exception ex) {
 							Response.Write ("Error: " + ex.Message);
@@ -173,6 +174,76 @@ namespace CSharpUpload
 					Response.Write("Please select a file to upload.");
 				}
 			}
+		}
+
+		private void mendUserLibrary(string user, string file) {
+			TagLib.File mp3file = TagLib.File.Create (file);
+			string artist = mp3file.Tag.FirstPerformer;
+			string album = mp3file.Tag.Album;
+			string track = mp3file.Tag.Title;
+//			IPicture cover = mp3file.Tag.Pictures [0].Data.Data;
+
+			string userrepo = Server.MapPath ("Data") + "/" + user;
+			if (!Directory.Exists (userrepo)) {
+				Directory.CreateDirectory (userrepo);
+			}
+
+			string artistdir = userrepo + "/" + artist;
+			if (!Directory.Exists (artistdir)) {
+				Directory.CreateDirectory (artistdir);
+			}
+
+			string albumdir = artistdir + "/" + album;
+			if (!Directory.Exists (albumdir)) {
+				Directory.CreateDirectory (albumdir);
+			}
+
+			mp3file.Dispose ();
+			File.Move (file, albumdir);
+		}
+
+		// Assuming the following directory structure: User -> Artists -> Albums -> Tracks
+		private String generateJSON(string username) {
+			string userrepo = Server.MapPath (username);
+			if (!Directory.Exists(userrepo)) {
+				Directory.CreateDirectory (userrepo);
+			}
+
+			Boolean firstArtist = true;
+			Boolean firstAlbum = true;
+			Boolean firstTrack = true;
+
+			StringBuilder sb = new StringBuilder ();
+			sb.Append ("[");
+			foreach (string artist in Directory.GetDirectories(userrepo)) {
+				if (!firstArtist) sb.Append (", ");
+				sb.Append ("{\"artist\": " + "\"" + artist + "\", ");
+				sb.Append ("\"albums\": [");
+
+				foreach (string album in Directory.GetDirectories(artist)) {
+					if (!firstAlbum) sb.Append (", ");
+					sb.Append ("{\"title\": " + "\"" + album + "\", ");
+					sb.Append ("\"cover\": " + "\"" + album + "/cover.png" + "\", ");
+					sb.Append ("\"tracks\": [");
+
+					foreach (string track in Directory.GetFiles(album)) {
+						if (!firstTrack) sb.Append(", ");
+						sb.Append ("{\"title\": " + "\"" + track + "\", ");
+						sb.Append ("\"url\": " + "\"" + track + "\"}");
+						firstTrack = false;
+					}
+					firstTrack = true;
+					sb.Append ("]}");
+					firstAlbum = false;
+				}
+				firstAlbum = true;
+				sb.Append ("]}");
+				firstArtist = false;
+			}
+			firstArtist = true;
+			sb.Append ("]");
+
+			return sb.ToString();
 		}
 	}
 }
